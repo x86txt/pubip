@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="https://ip.secunit.io/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://txt.secunit.io/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 
         <script>
         $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
@@ -9,8 +9,6 @@
             pair = pair.split('=');
             return obj[pair[0]] = pair[1], obj;
         }, {});
-
-        $("#pubip").html(data.ip);
         document.write(data.ip);
         });
         </script>
